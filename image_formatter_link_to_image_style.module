@@ -37,7 +37,7 @@ function image_formatter_link_to_image_style_field_formatter_settings_form($fiel
     '#options' => $image_styles,
   );
   $element['image_link_style'] = array(
-    '#title' => t('Link image to'),
+    '#title' => t('Link image to image style'),
     '#type' => 'select',
     '#default_value' => $settings['image_link_style'],
     '#empty_option' => t('None (original image)'),
