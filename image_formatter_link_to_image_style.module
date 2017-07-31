@@ -118,7 +118,7 @@ function image_formatter_link_to_image_style_field_formatter_view($entity_type, 
   $element = array();
 
   foreach ($items as $delta => $item) {
-    if (isset($display['settings']['image_link_style'])) {
+    if (!empty($display['settings']['image_link_style'])) {
       $path = image_style_url($display['settings']['image_link_style'], $item['uri']);
     }
     else {
